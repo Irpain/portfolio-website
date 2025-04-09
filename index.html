@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio of Irfan Ahamed Melekkandy Puthalath, a Master of Information Technology (Machine Learning) candidate at Rutgers University. Explore his experience in software engineering, machine learning, and innovative projects." />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO / Social Meta Tags -->
+    <meta property="og:title" content="Irfan Ahamed Melekkandy Puthalath | Portfolio">
+    <meta property="og:description" content="Portfolio of Irfan Ahamed, a Master of Information Technology candidate at Rutgers University.">
+    <meta property="og:image" content="iam73scarletmail.rutgers.edu-0_1_optimized_1000.jpg">
+    <meta property="og:url" content="https://yourportfolio.com">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <title>Irfan Ahamed Melekkandy Puthalath | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body class="dark-theme">
+    <!-- Skip link for accessibility -->
+    <a class="skip-link" href="#profile">Skip to content</a>
+
+    <!-- HEADER / NAVIGATION -->
+    <header>
+      <nav id="desktop-nav" aria-label="Primary navigation">
+        <div class="logo">Irfan Ahamed Melekkandy Puthalath</div>
+        <div class="nav-right">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <nav id="hamburger-nav" aria-label="Mobile navigation">
+        <div class="logo">Irfan Ahamed M.P.</div>
+        <div class="hamburger-menu">
+          <!-- Added ARIA label and tabindex for better accessibility -->
+          <div class="hamburger-icon" onclick="toggleMenu()" aria-label="Toggle mobile navigation" role="button" tabindex="0">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <ul>
+              <li><a href="#about" onclick="toggleMenu()">About</a></li>
+              <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+              <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+              <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- PROFILE SECTION -->
+      <section id="profile">
+        <div class="section__pic-container">
+          <!-- Added lazy loading attribute -->
+          <img
+            src="iam73scarletmail.rutgers.edu-0_1_optimized_1000.jpg" 
+            alt="Profile picture of Irfan Ahamed"
+            class="about-pic"
+            loading="lazy"
+          />
+        </div>
+        <div class="section__text">
+          <p class="section_text_p1">Hi, I'm</p>
+          <h1 class="title">Irfan Ahamed Melekkandy Puthalath</h1>
+          <p class="section_text_p2">Master of Information Technology (Machine Learning) Candidate</p>
+          <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('Resume_IrfanAhamed.pdf')">
+              <i class="fas fa-download"></i> Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">
+              <i class="fas fa-envelope"></i> Contact Me
+            </button>
+          </div>
+          <div id="socials-container">
+            <a href="https://www.linkedin.com/in/irfanahamp/" target="_blank" aria-label="LinkedIn Profile">
+              <img src="linkedin.png" alt="LinkedIn icon" class="icon" loading="lazy" />
+            </a>
+            <a href="https://github.com/Irpain" target="_blank" aria-label="GitHub Profile">
+              <img src="github.png" alt="GitHub icon" class="icon" loading="lazy" />
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT SECTION -->
+      <section id="about">
+        <p class="section_text_p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+          <div class="about-details-container">
+            <div class="about-containers">
+              <!-- Profile Details -->
+              <div class="details-container">
+                <img src="experience.png" alt="Profile/Experience icon" class="icon" loading="lazy"/>
+                <h3>Profile</h3>
+                <ul>
+                  <li>Graduate student at Rutgers University pursuing a Master of Information Technology (Machine Learning) (Sep 2024 – Dec 2025).</li>
+                  <li>Experienced Software Engineer specializing in NLP, computer vision, microservices, and ML pipelines.</li>
+                  <li>Proven ability in architecting intelligent systems, optimizing performance, and mentoring teams.</li>
+                </ul>
+              </div>
+              <!-- Education Details -->
+              <div class="details-container">
+                <img src="education.png" alt="Education icon" class="icon" loading="lazy"/>
+                <h3>Education</h3>
+                <ul>
+                  <li>Master of Information Technology (Machine Learning) – Rutgers University (Sep 2024 – Dec 2025)</li>
+                  <li>B.E. in Electronics and Instrumentation – RV College of Engineering (Aug 2017 – Aug 2021)</li>
+                </ul>
+              </div>
+            </div>
+            <div class="text-container">
+              <h3>Skills & Expertise</h3>
+              <ul>
+                <li>Skilled in developing intelligent document processing systems, custom ML models, and microservices solutions.</li>
+                <li>Proficient in implementing state-of-the-art techniques (e.g., BERT, CNN) to enhance efficiency and accuracy.</li>
+                <li>Committed to continuous learning, innovative problem-solving, and driving impactful technology projects.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <img
+          src="arrow.png"
+          alt="Arrow icon to navigate to experience section"
+          class="icon arrow"
+          onclick="location.href='#experience'"
+          loading="lazy"
+        />
+      </section>
+
+      <!-- EXPERIENCE SECTION -->
+      <section id="experience">
+        <p class="section_text_p1">Explore My</p>
+        <h1 class="title">Experience</h1>
+
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <!-- CGI Inc. Experience -->
+            <div class="details-container">
+              <h2 class="experience-sub-title">CGI Inc. – Bengaluru, India (Sep 2022 – Jul 2024)</h2>
+              <div class="article-container">
+                <article>
+                  <img src="checkmark.png" alt="Checkmark icon" class="icon" loading="lazy"/>
+                  <p>Architected and implemented an intelligent document processing system using NLP and computer vision, achieving 94% accuracy.</p>
+                </article>
+                <article>
+                  <img src="checkmark.png" alt="Checkmark icon" class="icon" loading="lazy"/>
+                  <p>Developed custom BERT models on AWS SageMaker to reduce document processing time by 73%.</p>
+                </article>
+                <article>
+                  <img src="checkmark.png" alt="Checkmark icon" class="icon" loading="lazy"/>
+                  <p>Designed a microservices architecture with Vert.x, integrating ML pipelines to cut operational costs by $1.8M annually and boost compliance reporting by 37%.</p>
+                </article>
+                <article>
+                  <img src="checkmark.png" alt="Checkmark icon" class="icon" loading="lazy"/>
+                  <p>Spearheaded a Vert.x and Quarkus-based microservices project, managing full-cycle development and system integration.</p>
+                </article>
+                <article>
+                  <img src="checkmark.png" alt="Checkmark icon" class="icon" loading="lazy"/>
+                  <p>Enhanced a fee-calculating system's efficiency by 87% through algorithmic optimizations and parallel processing.</p>
+                </article>
+                <article>
+                  <img src="checkmark.png" alt="Checkmark icon" class="icon" loading="lazy"/>
+                  <p>Mentored junior developers in ML and software engineering best practices, improving coding standards by 30%.</p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Technical Skills -->
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <h2 class="experience-sub-title">Technical Skills</h2>
+              <div class="article-container">
+                <article>
+                  <img src="checkmark.png" alt="Checkmark icon" class="icon" loading="lazy"/>
+                  <div>
+                    <h3>Languages &amp; Frameworks</h3>
+                    <p>Python, Java, SQL, C++, R, JavaScript, Angular, Vert.x, Bash, Linux</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="checkmark.png" alt="Checkmark icon" class="icon" loading="lazy"/>
+                  <div>
+                    <h3>Tools &amp; Platforms</h3>
+                    <p>Docker, Kubernetes, AWS SageMaker, MySQL, Redis, Tableau, VS Code, Eclipse, Git, Pandas, NumPy</p>
+                  </div>
+                </article>
+                <article>
+                  <img src="checkmark.png" alt="Checkmark icon" class="icon" loading="lazy"/>
+                  <div>
+                    <h3>Certifications</h3>
+                    <p><a href="https://www.credly.com/badges/c605587f-ae68-41b8-b8fb-00f2a7ce23d1/public_url" target="_blank">AWS Certified Developer – Associate</a></p>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="arrow.png"
+          alt="Arrow icon to navigate to projects section"
+          class="icon arrow"
+          onclick="location.href='#projects'"
+          loading="lazy"
+        />
+      </section>
+
+      <!-- PROJECTS SECTION -->
+      <section id="projects">
+        <p class="section_text_p1">Browse My Recent</p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <!-- Project 1: React Notes Application Deployment with AWS Amplify -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="aws-notes-app.png"
+                  alt="Thumbnail for React Notes Application Deployment with AWS Amplify"
+                  class="project-img"
+                  loading="lazy"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">
+                React Notes Application Deployment with AWS Amplify
+              </h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/Irpain/notes-app', '_blank')"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+
+            <!-- Project 2: Production-Grade Depth Regression Model -->
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="depth-regression.png"
+                  alt="Thumbnail for Production-Grade Depth Regression Model"
+                  class="project-img"
+                  loading="lazy"
+                />
+              </div>
+              <h2 class="experience-sub-title project-title">
+                Production-Grade Depth Regression Model
+              </h2>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.open('https://github.com/Irpain/depth-regression', '_blank')"
+                >
+                  Github
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="arrow.png"
+          alt="Arrow icon to navigate to contact section"
+          class="icon arrow"
+          onclick="location.href='#contact'"
+          loading="lazy"
+        />
+      </section>
+    </main>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <p class="section_text_p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+            loading="lazy"
+          />
+          <p>
+            <a href="mailto:iam73@scarletmail.rutgers.edu" target="_blank">
+              iam73@scarletmail.rutgers.edu
+            </a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+            loading="lazy"
+          />
+          <p>
+            <a href="https://www.linkedin.com/in/irfanahamp/" target="_blank">
+              LinkedIn
+            </a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="phone.png"
+            alt="Phone icon"
+            class="icon contact-icon"
+            loading="lazy"
+          />
+          <p>(862) 423-3940</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER SECTION -->
+    <footer>
+      <nav aria-label="Footer navigation">
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>&#169; 2025 Irfan Ahamed Melekkandy Puthalath. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+  </body>
+</html>

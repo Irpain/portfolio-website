@@ -1,0 +1,129 @@
+/* Animation styles */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.details-container, .color-container {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Scrolled header styling */
+header.scrolled {
+  background-color: rgba(30, 30, 30, 0.98);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Menu transitions */
+.menu-links {
+  transform: translateY(-10px);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Enhanced media queries */
+@media screen and (max-width: 1024px) {
+  section {
+      padding: 4rem 0;
+  }
+  
+  .about-containers {
+      gap: 1rem;
+  }
+  
+  .experience-details-container, .about-details-container {
+      max-width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #desktop-nav {
+      display: none;
+  }
+  
+  #hamburger-nav {
+      display: flex;
+  }
+  
+  .logo {
+      font-size: 1rem;
+  }
+  
+  section {
+      padding: 3rem 0;
+      min-height: auto;
+  }
+  
+  .title {
+      font-size: 2rem;
+  }
+  
+  .about-containers {
+      flex-direction: column;
+      gap: 1.5rem;
+  }
+  
+  .contact-info-upper-container {
+      flex-direction: column;
+      align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav-links {
+      gap: 1rem;
+  }
+  
+  .logo {
+      font-size: 0.8rem;
+  }
+  
+  .section_text_p1 {
+      font-size: 0.8rem;
+  }
+  
+  .title {
+      font-size: 1.8rem;
+  }
+  
+  .btn {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.9rem;
+  }
+  
+  .details-container {
+      padding: 1.5rem;
+  }
+  
+  .color-container {
+      padding: 0.8rem;
+  }
+  
+  .icon {
+      width: 24px;
+      height: 24px;
+  }
+}
